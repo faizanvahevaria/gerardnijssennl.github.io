@@ -1,3 +1,4 @@
+<!-- main page -->
 <html>
 <head>
     <meta charset="UTF-8">
@@ -21,6 +22,44 @@
     </style>
 </head>
 
+<script>
+$(document).ready(function(){
+    $(".arrow_left ").hover(
+	    function() {
+		    $(this).animate(
+			    {marginLeft:'-4px'}, 'fast')
+	    }
+    )
+    $(".arrow_left ").mouseleave(
+	    function() {
+		    $(this).animate(
+			    {marginLeft:'0px'}, 'fast')
+	    }
+    )
+    $(".arrow_right ").hover(
+	    function() {
+		    $(this).animate(
+			    {marginRight:'-4px'}, 'fast')
+	    }
+    )
+    $(".arrow_right ").mouseleave(
+	    function() {
+		    $(this).animate(
+			    {marginRight:'0px'}, 'fast')
+	    }
+    )
+});
+</script>
+<script>
+$(document).ready(function(){
+$('.thumbview').mouseenter( function () {
+  $(this).addClass('fadeO').removeClass('fade');
+} ).mouseleave( function () {
+  $(this).addClass('fade').removeClass('fadeO');
+} );
+});
+</script>
+
 <body class="site">
 
 
@@ -40,6 +79,7 @@
 		<ul>
 		<li><a href="/bio/">Biography</a></li>
 		<li><a href="/thumbs/">Work</a></li>
+		<li><a href="/discovered/">Recently discovered</a></li>
 		<!--<li><a href="#">Awards</a></li>-->
 		<li><a href="/contact/">Contact</a></li>
 		</div>
@@ -52,44 +92,6 @@
 <a href="#" style="border-bottom:0px;">info (at) gerardnijssen.nl</a></h6></footer>
 
 
-
-<script>
-$(document).ready(function(){
-    $(".arrow_left").hover(
-	    function() {
-		    $(this).animate(
-			    {marginLeft:'-4px'}, 'fast')
-	    }
-    )
-    $(".arrow_left").mouseleave(
-	    function() {
-		    $(this).animate(
-			    {marginLeft:'0px'}, 'fast')
-	    }
-    )
-    $(".arrow_right").hover(
-	    function() {
-		    $(this).animate(
-			    {marginRight:'-4px'}, 'fast')
-	    }
-    )
-    $(".arrow_right").mouseleave(
-	    function() {
-		    $(this).animate(
-			    {marginRight:'0px'}, 'fast')
-	    }
-    )
-});
-</script>
-<script>
-$(document).ready(function(){
-$('.thumbview').mouseenter( function () {
-  $(this).addClass('fadeO').removeClass('fade');
-} ).mouseleave( function () {
-  $(this).addClass('fade').removeClass('fadeO');
-} );
-});
-</script>
 
 <!-- footer -->
 
